@@ -1,9 +1,13 @@
+.header {
+  flex-grow: 0;
+}
 .navbar {
   display: flex;
   align-items: center;
   padding: 20px;
-  height: 50px;
-  border-bottom: black;
+  height: 30px;
+  color: #000000;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 nav {
   flex: 1;
@@ -68,4 +72,42 @@ h2 {
   background: radial-gradient(#fff, #fb8c00);
   font-weight: normal;
   font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+}
+.small-container {
+  max-width: 1080px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 200px;
+}
+.row {
+  height: min-content;
+  display: flex;
+  margin-left: -200px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.col-4 img {
+  width: 100%;
+}
+.ratings .fa {
+  color: #ff523b;
+}
+/****bulk upload page********/
+.btn-btn {
+  background-color: #fb8c00;
+  color: black;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* Change styles for span on extra small screens **/
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
 }
